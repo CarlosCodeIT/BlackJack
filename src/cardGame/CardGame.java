@@ -1,3 +1,12 @@
+/*Name: Carlos Vega
+* Group Members: 
+* Date: 09/24/26
+* Program: BlackJack Card Game
+* Purpose: Reads card data, creates Card objects, shuffles the deck,
+*         deals cards to the player, checks for pairs, and counts face cards.
+*/
+
+
 package cardGame;
 
 import java.io.File;
@@ -43,17 +52,22 @@ public class CardGame {
 		System.out.println("players cards");
 		for(Card c: playerCards)
 			System.out.println(c);
+		
+		//Count face cards
+		int faceCount = 0;
+		for (Card c : playerCards) {
+			if (c.isFaceCard()) {
+				faceCount++;
+			}
+		}
+		
+		System.out.println("Number of face cards: " + faceCount);
 
 		System.out.println("pairs is " + checkFor2Kind());
 
 	}//end main
 
 	public static void shuffle() {
-		
-	/*	public boolean isFaceVard() {
-			
-			return this.value==10;
-		} */
 
 		//shuffling the cards by deleting and reinserting
 		for (int i = 0; i < deckOfCards.size(); i++) {
