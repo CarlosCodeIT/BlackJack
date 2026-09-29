@@ -1,6 +1,7 @@
-/*Name: Carlos Vega
-* Group Members: 
-* Date: 09/24/26
+/*
+* Name: Carlos Vega
+* Group Members: Alberto Vargas
+* Date: 09/24/2026
 * Program: BlackJack Card Game
 * Purpose: Reads card data, creates Card objects, shuffles the deck,
 *         deals cards to the player, checks for pairs, and counts face cards.
