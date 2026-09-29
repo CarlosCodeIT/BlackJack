@@ -38,11 +38,14 @@ public class CardGame {
 					Integer.parseInt(fields[2].trim()), fields[3]);
 			deckOfCards.add(newCard);	
 		}
-
+		
+		//TEMPORARY: print deck to verify correct loading
+	/*	for (Card c: deckOfCards) {
+			System.out.println(c);
+			}
+    */
 		shuffle();
 
-		//for(Card c: deckOfCards)
-			//System.out.println(c);
 
 		//deal the player 5 cards
 		for(int i = 0; i < 4; i++) {
