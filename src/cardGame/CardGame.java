@@ -49,6 +49,11 @@ public class CardGame {
 	}//end main
 
 	public static void shuffle() {
+		
+	/*	public boolean isFaceVard() {
+			
+			return this.value==10;
+		} */
 
 		//shuffling the cards by deleting and reinserting
 		for (int i = 0; i < deckOfCards.size(); i++) {
